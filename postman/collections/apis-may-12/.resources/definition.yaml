@@ -1,0 +1,10 @@
+$kind: collection
+description: |-
+  This collection provides a set of requests for exploring and interacting with a versioned REST API. It is organized around API version discovery and inspection, covering two core operations:
+
+  - **List API versions** — Retrieves all available versions of the API from the root endpoint (`/`).
+  - **Show API version details** — Returns detailed information about a specific API version via the `/v2` endpoint.
+
+  The collection uses a `{{baseUrl}}` variable to keep the base URL configurable across environments, making it easy to switch between local, staging, or production targets. It is intended as a starting point for understanding the API's versioning structure and validating version-related endpoints.
+variables:
+  baseUrl: /

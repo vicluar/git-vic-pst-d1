@@ -1,0 +1,41 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/"
+  method: GET
+  headers:
+    Accept: application/json
+response:
+  statusCode: 300
+  statusText: Multiple Choices
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      {
+        "versions": [
+          {
+            "status": "CURRENT",
+            "updated": "2011-01-21T11:33:21Z",
+            "id": "v2.0",
+            "links": [
+              {
+                "href": "http://127.0.0.1:8774/v2/",
+                "rel": "self"
+              }
+            ]
+          },
+          {
+            "status": "EXPERIMENTAL",
+            "updated": "2013-07-23T11:33:21Z",
+            "id": "v3.0",
+            "links": [
+              {
+                "href": "http://127.0.0.1:8774/v3/",
+                "rel": "self"
+              }
+            ]
+          }
+        ]
+      }
+order: 2000

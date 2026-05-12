@@ -1,0 +1,12 @@
+workspace:
+  id: 9d99c836-237e-476a-9cd0-42ca0065e69b
+localResources:
+  collections:
+    - ../postman/collections/apis-may-12
+  specs:
+    - ../index.yaml
+cloudResources:
+  collections:
+    ../postman/collections/apis-may-12: 52173241-62246e80-a890-4784-9295-dd1a9e79f349
+  specs:
+    ../index.yaml: b818a4e9-77b1-416c-9295-1f435075ee62
